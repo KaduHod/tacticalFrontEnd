@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TACTICAL</title>
     <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/gallery.min.css">
+    <link rel="stylesheet" href="assets/css/gallery.theme.css">
     <style>
         @font-face {
             font-family: 'ROBOTO';
@@ -30,20 +32,6 @@
             flex-direction: column;
             overflow-x: hidden;
         }
-
-        #Slider{
-            display: flex;
-            height: 80vh;
-            width: 100vw;
-            box-sizing: border-box;
-            justify-content: space-around;
-            align-items: center;
-            background-image: url('assets/img/sliderImages/0.jpg'); 
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            transition: 500ms;
-        }
         #QuemSomosNós{
             display: flex;
             background-color: rgb(236, 236, 236);
@@ -60,14 +48,7 @@
             align-items: center;
             justify-content: center;
         }
-        #seta {
-            position: absolute;
-            padding: 10px;
-            box-shadow: 2px -2px 0 1px #000 inset;
-            border: solid transparent;
-            border-width: 0 0 5px 5px;
-            border-radius: 2px;
-        }
+        
  
     </style>
 </head>
@@ -92,16 +73,28 @@
         </div>
     </header>
     <main>
-        <div name="slider" id="Slider">
-             <div class="sliderSeta" onclick="slider('left')">
-                <div id="seta" style="transform: rotate(45deg);"></div>
+        <div class="gallery autoplay items-3">
+            <div id="item-1" class="control-operator"></div>
+            <div id="item-2" class="control-operator"></div>
+            <div id="item-3" class="control-operator"></div>
+
+            <figure class="item">
+                <h1><img style="width: 100%;" src="assets/img/sliderImages/0.jpg" alt=""></h1>
+            </figure>
+            <figure class="item">
+                <h1><img style="width: 100%;"  src="assets/img/sliderImages/1.jpg" alt=""></h1>
+            </figure>
+            <figure class="item">
+                <h1><img style="width: 100%;"  src="assets/img/sliderImages/2.jpg" alt=""></h1>
+            </figure>
+
+            <div class="controls">
+                <a href="#item-1" class="control-button">.</a>
+                <a href="#item-2" class="control-button">.</a>
+                <a href="#item-3" class="control-button">.</a>
             </div>
-            <div class="sliderSeta"  onclick="slider('rigth')">
-                <div id="seta"style="transform: rotate(-135deg);"></div>
-            </div> 
-             
-            
         </div>
+        
         <div name='QuemSomosNós' id="QuemSomosNós">
 
         </div>
