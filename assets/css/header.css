@@ -1,0 +1,93 @@
+header{
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    content: '';
+    box-sizing: border-box;
+    
+    background-color: rgb(0, 0, 0);
+    animation: shadow-in 600ms 300ms linear forwards;
+}
+@keyframes shadow-in {
+    to{
+        box-shadow: 0px 0px 20px black;
+    }
+}
+#Logo{
+    flex: 1;
+    display: flex;
+             
+    box-sizing: border-box;
+}
+#Logo img{
+    
+    height: 100px;
+    
+    position: absolute;
+    left:120px;
+    top: -10px;
+}
+#headerContato{
+    flex: 1;
+    
+}
+#headerItems{
+    flex: 2.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#headerItemsList{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    list-style: none;
+    font-size: 17px;
+    
+    
+}
+#headerItemsList li{
+    cursor: pointer;
+}
+#headerContato{
+    flex: 1;
+    display: flex;
+    box-sizing: border-box;
+    transform: skewX(-20deg);
+    background-color: rgb(80, 80, 80);
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+#headerContato {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+
+}
+#headerContato img{
+    
+    display: block;
+
+}
+
+
+#headerItem{
+    width: fit-content;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    transform: skewX(20deg);
+    color: rgb(0, 0, 0);
+}
+#headerItem img{
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+}

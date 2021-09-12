@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TACTICAL</title>
+    <link rel="stylesheet" href="assets/css/header.css">
+    <style>
+        @font-face {
+            font-family: 'ROBOTO';
+            src: url("assets/css/fonts/Roboto-Black.ttf");
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family:'Times New Roman', Times, serif; 
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-family:fantasy;
+            
+            */
+            font-family:'ROBOTO';
+            
+        }
+        body{
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        #Slider{
+            display: flex;
+            height: 80vh;
+            width: 100vw;
+            box-sizing: border-box;
+            justify-content: space-around;
+            align-items: center;
+            background-image: url('assets/img/sliderImages/0.jpg'); 
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: 500ms;
+        }
+        #QuemSomosNós{
+            display: flex;
+            background-color: rgb(236, 236, 236);
+            height: 80vh;
+            width: 100vw;
+            
+        }
+        .sliderSeta{
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 0, 0, 0.705);
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #seta {
+            position: absolute;
+            padding: 10px;
+            box-shadow: 2px -2px 0 1px #000 inset;
+            border: solid transparent;
+            border-width: 0 0 5px 5px;
+            border-radius: 2px;
+        }
+ 
+    </style>
+</head>
+<body>
+    <header>
+        <div id="Logo">
+            <img src="assets/img/lock.png" alt="">
+        </div>
+        <div id="headerItems">
+            <ul id="headerItemsList">
+                <li>Quem somos nós</li>
+                <li>Nossos valores</li>
+                <li>Redes sociais/Localização</li>
+                <li>Contato</li>
+            </ul>
+        </div>
+        <div id="headerContato">
+            <div id="headerItem">
+                <img src="assets/img/whattslogo.png" alt="">
+                <strong> (041) 99999-8888</strong> 
+            </div>
+        </div>
+    </header>
+    <main>
+        <div name="slider" id="Slider">
+             <div class="sliderSeta" onclick="slider('left')">
+                <div id="seta" style="transform: rotate(45deg);"></div>
+            </div>
+            <div class="sliderSeta"  onclick="slider('rigth')">
+                <div id="seta"style="transform: rotate(-135deg);"></div>
+            </div> 
+             
+            
+        </div>
+        <div name='QuemSomosNós' id="QuemSomosNós">
+
+        </div>
+        <div name='MVVa'>
+            <!-- Missao visao e valores-->
+        </div>
+        <div name='RedesSociais_Endereço'>
+
+        </div>
+        <div name='Mapa'>
+
+        </div>
+
+    </main>
+    <div name='Contato'>
+
+    </div>
+    <footer>
+
+    </footer>
+    <script>
+        arraySlider = ['0','1','2']
+        let contSlider = '0'
+        function slider(direcao){
+            let sliderBlock = document.getElementById('Slider')
+            if(direcao == 'rigth'){
+                contSlider++
+                if( contSlider == arraySlider.length) contSlider = '0'
+            }
+            if(direcao == 'left'){
+                if(contSlider == 0) contSlider = `${arraySlider.length}`
+                contSlider--
+            }
+
+            sliderBlock.style.backgroundImage = `url('assets/img/sliderImages/${contSlider}.jpg')`
+        }
+    </script>
+</body>
+</html>
