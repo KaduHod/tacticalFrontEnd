@@ -1,0 +1,42 @@
+#QuemSomosNós{
+    display: flex;
+    background-color: rgb(238, 238, 238);
+    height: 65vh;
+    width: 100vw;
+    
+    content: '';
+    font-family: 'Staatliches';
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#QuemSomosNós h1{
+    font-size: 65px;
+    padding-bottom: 10px;
+    /* border-bottom: 6px solid black; */
+    
+    
+}
+#QuemSomosNós h1::after{
+    width: 190px;
+    background-color: black;
+    display: block;
+    content: '';
+    height: 5px;
+    margin: 15px auto 0;
+}
+#descQuemSomosNós{
+    width: 70%;
+    text-align: center;
+    font-size: 19px;
+    font-family:sans-serif;
+    margin: 0;
+    color: #000;
+    
+    line-height: 25px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
