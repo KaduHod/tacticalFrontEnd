@@ -1,0 +1,61 @@
+#ContainerSlaider1{
+    background-image: url("../img/sliderImages/0.jpg");
+    background-position: 0px -70px;
+}
+#ContainerSlaider2{
+    background-image: url("../img/sliderImages/1.jpg");
+    background-position: 0px -70px;
+    
+}
+#ContainerSlaider3{
+    background-image: url("../img/sliderImages/2.jpg");
+    background-position: 0px -150px;
+    
+}
+.containerSlider{
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1;
+    height: 64vh;
+    content: '';
+    align-items: center;
+    justify-content: space-around;
+    font-size: 17px;
+}
+.descServiço{
+    width: 700p;
+    height: fit-content;
+}
+.containerSliderItem{
+    flex:1;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 100px;
+    
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+.esq{
+    text-align: left;
+}
+.dir{
+    text-align: right;
+    
+}
+.tituloContainerSlider{
+    margin-bottom: 20px;
+    font-size: 65px;
+    font-family: 'Staatliches';
+}
+.card{
+    background-color: rgba(180, 180, 180, 0.281);
+    border-radius: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px ;
+    margin-left: 40px;
+    box-sizing: border-box;
+}

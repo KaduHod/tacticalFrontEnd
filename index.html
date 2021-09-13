@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TACTICAL</title>
     <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
     <link rel="stylesheet" href="assets/css/gallery.min.css">
     <link rel="stylesheet" href="assets/css/gallery.theme.css">
     <style>
         @font-face {
             font-family: 'ROBOTO';
             src: url("assets/css/fonts/Roboto-Black.ttf");
+            
+        }
+        @font-face {
+            font-family: 'Staatliches';
+            src: url("assets/css/fonts/Staatliches-Regular.ttf");
         }
         *{
             margin: 0;
@@ -39,17 +45,9 @@
             width: 100vw;
             
         }
-        .sliderSeta{
-            width: 40px;
-            height: 40px;
-            background-color: rgba(0, 0, 0, 0.705);
-            border-radius: 2px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
         
- 
+        
+        
     </style>
 </head>
 <body>
@@ -68,7 +66,7 @@
         <div id="headerContato">
             <div id="headerItem">
                 <img src="assets/img/whattslogo.png" alt="">
-                <strong> (041) 99999-8888</strong> 
+                <strong> 041 99999-8888</strong> 
             </div>
         </div>
     </header>
@@ -77,21 +75,55 @@
             <div id="item-1" class="control-operator"></div>
             <div id="item-2" class="control-operator"></div>
             <div id="item-3" class="control-operator"></div>
+            
 
             <figure class="item">
-                <h1><img style="width: 100%;" src="assets/img/sliderImages/0.jpg" alt=""></h1>
-            </figure>
-            <figure class="item">
-                <h1><img style="width: 100%;"  src="assets/img/sliderImages/1.jpg" alt=""></h1>
-            </figure>
-            <figure class="item">
-                <h1><img style="width: 100%;"  src="assets/img/sliderImages/2.jpg" alt=""></h1>
+                <h1>
+                    <div class="containerSlider" id="ContainerSlaider1">
+                        <div class="containerSliderItem card esq">
+                            <h1 class="tituloContainerSlider">Serviço 1</h1>
+                            <p class="descServiço">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure deleniti dolor nemo perferendis vel repudiandae, ut explicabo, quidem debitis labore totam, accusantium exercitationem voluptates neque pariatur dolorum consequatur culpa unde.</p>
+                        </div>
+                        <div class="containerSliderItem dir">
+                            <img src='assets/img/vigilancia.png' style="width: 200px; height: 200px;" class="imgServiço"  alt="">
+                        </div>
+                    </div>
+                </h1>
             </figure>
 
+            <figure class="item">
+                <h1>
+                    <div class="containerSlider" id="ContainerSlaider2">
+                        <div class="containerSliderItem card esq">
+                            <h1 class="tituloContainerSlider">Serviço 2</h1>
+                            <p class="descServiço">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure deleniti dolor nemo perferendis vel repudiandae, ut explicabo, quidem debitis labore totam, accusantium exercitationem voluptates neque pariatur dolorum consequatur culpa unde.</p>
+                        </div>
+                        <div class="containerSliderItem dir">
+                            <img src='assets/img/group.png' style="width: 250px; height: 250px;" class="imgServiço"  alt="">
+                        </div>
+                    </div>
+                    
+                </h1>
+            </figure>
+            <figure class="item">
+                <h1>
+                    <div class="containerSlider" id="ContainerSlaider3">
+                        <div class="containerSliderItem card esq">
+                            <h1 class="tituloContainerSlider">Serviço 3</h1>
+                            <p class="descServiço">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure deleniti dolor nemo perferendis vel repudiandae, ut explicabo, quidem debitis labore totam, accusantium exercitationem voluptates neque pariatur dolorum consequatur culpa unde.</p>
+                        </div>
+                        <div class="containerSliderItem dir">
+                            <img src='assets/img/guard.png' style="width: 250px; height: 250px;" class="imgServiço"  alt="">
+                        </div>
+                    </div>
+                    
+                </h1>
+            </figure>
             <div class="controls">
                 <a href="#item-1" class="control-button">.</a>
                 <a href="#item-2" class="control-button">.</a>
                 <a href="#item-3" class="control-button">.</a>
+                
             </div>
         </div>
         

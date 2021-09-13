@@ -49,10 +49,19 @@ header{
     font-size: 17px;
     
     
+    
 }
 #headerItemsList li{
     cursor: pointer;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    transition: 100ms;
 }
+#headerItemsList li:hover{
+    border-bottom: 2px solid rgb(165, 165, 165);
+}
+
 #headerContato{
     flex: 1;
     display: flex;
