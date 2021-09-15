@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/css/slider.css">
     <link rel="stylesheet" href="assets/css/MVVa.css">
     <link rel="stylesheet" href="assets/css/QuemSomosNos.css">
+    <link rel="stylesheet" href="assets/css/RedesSociais&Localizacao.css">
+    <link rel="stylesheet" href="assets/css/googlemaps.css">
     <link rel="stylesheet" href="assets/css/gallery.min.css">
     <link rel="stylesheet" href="assets/css/gallery.theme.css">
     <style>
@@ -41,62 +43,111 @@
             flex-direction: column;
             overflow-x: hidden;
         }
-        #RedesSociais_Endereço{
-            height: 100vh;
-            width: 100vw;
+        #Contato{
             display: flex;
-            
-            background-image: url('assets/img/eagle2.jpg');
-            background-size: cover;
-            background-position: center;
+            height: fit-content;
+            width: 100%;
             content: '';
-        }
-        .RS_EContainer{
-            flex: 1;
-            height: 100%;
             
-            display: flex;
             align-items: center;
-            justify-content: center;
+            background: #f1f1f1;  /* fallback for old browsers */
+            
+
+            padding: 20px;
+            padding: 15px 30px 15px 30px;
+            flex-direction: column;
+            
+            
+
         }
-        #listaRedesSociais{
+        #TituloContato{
+            font-size: 65px;
+            padding-bottom: 0px;
+            color: white;
+            color: black;
+        }
+        #TituloContato::after{
+            width: 100px;
+            background-color: rgb(0, 0, 0);
+            display: block;
+            content: '';
+            height: 4px;
+            margin: 15px auto 0;
+            
+        }
+        #Contato form{
             display: flex;
             flex-direction: column;
-            height: 100%;
-            justify-content: space-around;
-        }
-        .ItemListaRedesSociais{
-            display: flex;
-            
-            color: white;
             align-items: center;
-            justify-content: flex-start;
-            font-family:sans-serif;
-            font-size: 19px;
-
+            margin-top: 20px;
+            width: fit-content;
+            background-color: white;
+            border-radius: 20px;
+            padding: 80px;
+            padding-top:15px;
+            padding-bottom: 15px;
+            box-shadow: 0px 0px 50px rgba(82, 82, 82, 0.705);
         }
-        .imgRS_E{
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
-        }
-        .tituloRedesSociais{
-            font-size: 40px;
-            font-family: 'Staatliches';
-            color: white;
-        }
-        #RedesSociais_EndereçoCOLORBACKGROUND{
-            height: 100%;
-            width: 100%;
+        .labelContato{
             display: flex;
-            background: #232526;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #41434583, #232526fb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            flex-direction: column;
+            margin: 10px 0px 10px 0px;
+            
+        }
+        .labelContato input{
+            border: none;
+            border-bottom: 2px solid black;
+            height: 20px;
+            padding: 5px;
+        }
+        textarea{
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 5px;
+            transition: 200ms;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0);
+        }
+        label h1{
+            font-size: 17px;
+            background-color: rgba(255, 255, 255, 0);
+            
+            width: 100%;
+            transform: translate(0px, 27px);
+            padding: 3px;
+            transition: 200ms;
+        }
+        
+        #inputsAREA{
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            
+        }
+        input:focus {
+            box-shadow: 0 0 0 0;
+            outline: 0;
+        }
+        textarea:focus{
+            box-shadow: 0 0 0 0;
+            outline: 0;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.226);
+            border: none;
+            border: 2px solid rgba(0, 0, 0, 0);
+        }
+        input[type='submit']{
+            border: none;
+            height: 50px;
+            width: 100px;
+            background-color: white;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 25px;
 
         }
-        #endereço{
-            border: 1px solid red;
-        }
+        
+        
         
     </style>
 </head>
@@ -226,37 +277,60 @@
                     </ul>
                 </div>
                 <div class="RS_EContainer" id="Endereço">
-                    
+                    <h1 class="tituloRedesSociais">LOCALIZAÇÃO</h1>
                     <h1 class="tituloRedesSociais">Av. Delegado Leopoldo Belczak, Capão da Imbuia 2000, Curitiba-PR</h1>
                 </div>
+                
             </div>
         </div>
-        <div name='Mapa'>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14412.185613610176!2d-49.22603577720173!3d-25.43671211288801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1631500889386!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div name='Mapa' id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14412.185613610176!2d-49.22603577720173!3d-25.43671211288801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1631500889386!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-
     </main>
-    <div name='Contato'>
-
+    <div name='Contato' id="Contato">
+        
+        <form action="">
+            <h1 id="TituloContato">Contato</h1>
+            <div id="inputsAREA">
+                <label class="labelContato" for="">
+                    <h1 onclick="estiloInput(`h1Nome`,`Nome`)" id="h1Nome">Nome</h1>
+                    <input type="text" name="Nome" id='Nome'>
+                </label>
+                <label class="labelContato" for="">
+                    <h1 onclick="estiloInput(`h1Email`,`Email`)" id="h1Email">Email</h1>
+                    <input type="mail" name="Email" id="Email">
+                </label>
+                <label class="labelContato" for="">
+                    <h1 onclick="estiloInput(`h1Tel`,`tel`)" id="h1Tel">Telefone</h1>
+                    <input type="text" name="tel" id="tel">
+                </label>
+                
+                
+                
+            </div>
+            
+            
+            <textarea name="Mensagem" id="" cols="30" rows="10">
+               
+            </textarea>
+            <input style="margin: 30px 0px 0px 0px;" type="submit">
+        </form>
     </div>
     <footer>
-        <a href="https://br.freepik.com/vetores/vintage">Vintage vetor criado por dgim-studio - br.freepik.com</a>
+        
     </footer>
     <script>
-        arraySlider = ['0','1','2']
-        let contSlider = '0'
-        function slider(direcao){
-            let sliderBlock = document.getElementById('Slider')
-            if(direcao == 'rigth'){
-                contSlider++
-                if( contSlider == arraySlider.length) contSlider = '0'
-            }
-            if(direcao == 'left'){
-                if(contSlider == 0) contSlider = `${arraySlider.length}`
-                contSlider--
-            }
-
-            sliderBlock.style.backgroundImage = `url('assets/img/sliderImages/${contSlider}.jpg')`
+        function estiloInput(id, idInput){
+            let elemento = document.getElementById(id)
+            
+            
+            if(elemento.style.transform !=='translateY(0px)'){
+                let inputElemento = document.getElementById(idInput)
+                inputElemento.select()
+                console.log(inputElemento)
+                elemento.style.transform = 'translateY(0px)'
+            } 
+            
         }
     </script>
 </body>
