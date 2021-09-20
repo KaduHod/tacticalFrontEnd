@@ -45,6 +45,14 @@
 }
 .dir{
     text-align: right;
+    width: 250px;
+    height: 250px;
+    
+}
+.dirmenor{
+    text-align: right;
+    width: 200px;
+    height: 200px;
     
 }
 .tituloContainerSlider{
@@ -59,4 +67,167 @@
     padding-bottom: 30px ;
     margin-left: 40px;
     box-sizing: border-box;
+}
+@media only screen and (max-width: 360px) {
+    .dirmenor{
+        height: 20px;
+    }
+    .esq{
+
+    }
+    #ContainerSlaider1{
+        background-image: url("../img/sliderImages/1.jpg");
+        background-position-y: center;
+        background-position-x:-270px ;
+        background-size: cover;
+    }
+    #ContainerSlaider2{
+        background-image: url("../img/sliderImages/0.jpg");
+        background-position-y: center;
+        background-size: cover;
+    }
+    #ContainerSlaider3{
+        background-image: url("../img/sliderImages/2.jpg");
+        background-position-y: center;
+        background-size: cover;
+    }
+    .containerSlider{
+        display: flex;
+        
+        flex: 1;
+        
+        height: 100%;
+        
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 13px;
+    }
+    .containerSliderItem{
+        width: 100vw;
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.575);
+    }
+    .esq{
+        height: 80%;
+    }
+    #esqmaior{
+        height: fit-content;
+    }
+    #dirmenor{
+        height: 20px;
+    }
+    .imgServiço{
+        width: 100px;
+        height: 100px;
+    }
+    .card{
+        border-radius: 0px;
+        padding-top:0px;
+        padding-bottom: 0px ;
+        margin-left: 0px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .tituloContainerSlider{
+        
+        font-size: 30px;
+        font-family: 'Staatliches';
+    }
+    .descServiço{
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        
+        text-align: center;
+        font-size: 17px;
+        padding-top:20px ;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .dirmenor{
+        height: 20px;
+    }
+    .esq{
+
+    }
+    #ContainerSlaider1{
+        background-image: url("../img/sliderImages/1.jpg");
+        background-position-y: center;
+        background-position-x:0px ;
+        background-size: cover;
+    }
+    #ContainerSlaider2{
+        background-image: url("../img/sliderImages/0.jpg");
+        background-position-y: center;
+        background-size: cover;
+    }
+    #ContainerSlaider3{
+        background-image: url("../img/sliderImages/2.jpg");
+        background-position-y: center;
+        background-size: cover;
+    }
+    .containerSlider{
+        display: flex;
+        
+        flex: 1;
+        
+        height: 100%;
+        
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 13px;
+    }
+    .containerSliderItem{
+        width: 100vw;
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.575);
+    }
+    .esq{
+        height: 80%;
+    }
+    #esqmaior{
+        height: fit-content;
+    }
+    #dirmenor{
+        height: 20px;
+    }
+    .imgServiço{
+        width: 100px;
+        height: 100px;
+    }
+    .card{
+        border-radius: 0px;
+        padding-top:0px;
+        padding-bottom: 0px ;
+        margin-left: 0px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .tituloContainerSlider{
+        
+        font-size: 30px;
+        font-family: 'Staatliches';
+    }
+    .descServiço{
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        
+        text-align: center;
+        font-size: 17px;
+        padding-top:20px ;
+    }
+
 }

@@ -39,9 +39,7 @@
         }
         body{
             width: 100vw;
-            background-image: url('assets/img/ContatoFotos/9.jpg');
-            background-attachment: fixed;
-            background-position-y:-550px ;
+            
             display: flex;
             flex-direction: column;
             overflow-x: hidden;
@@ -51,7 +49,10 @@
             flex-direction: column;
             overflow-x: hidden;
            /*  background-image: url('assets/img/ContatoFotos/9.jpg'); */
+           background-image: url('assets/img/ContatoFotos/9.jpg');
             
+            background-attachment: fixed;
+            background-position-y:-550px ;
             height: 100vh;
             justify-content: center;
             
@@ -117,7 +118,7 @@ background: linear-gradient(45deg, #e4e5e627, #00416ace); /* W3C, IE 10+/ Edge, 
         </div>
     </header>
     <main>
-        <div class="gallery autoplay items-3">
+        <div class="gallery autoplay items-3" >
             <div id="item-1" class="control-operator"></div>
             <div id="item-2" class="control-operator"></div>
             <div id="item-3" class="control-operator"></div>
@@ -126,12 +127,12 @@ background: linear-gradient(45deg, #e4e5e627, #00416ace); /* W3C, IE 10+/ Edge, 
             <figure class="item" >
                 <h1 style="height: 100%;">
                     <div class="containerSlider" id="ContainerSlaider1">
-                        <div class="containerSliderItem card esq">
+                        <div class="containerSliderItem card esq" id="esqmaior">
                             <h1 class="tituloContainerSlider">Serviço 1</h1>
                             <p class="descServiço">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure deleniti dolor nemo perferendis vel repudiandae, ut explicabo, quidem debitis labore totam, accusantium exercitationem voluptates neque pariatur dolorum consequatur culpa unde.</p>
                         </div>
-                        <div class="containerSliderItem dir">
-                            <img src='assets/img/group.png' style="width: 200px; height: 200px;" class="imgServiço"  alt="">
+                        <div class="containerSliderItem dirmenor" id="dirmenor">
+                            <img src='assets/img/group.png'  class="imgServiço"  alt="">
                         </div>
                     </div>
                 </h1>
@@ -145,7 +146,7 @@ background: linear-gradient(45deg, #e4e5e627, #00416ace); /* W3C, IE 10+/ Edge, 
                             <p class="descServiço">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure deleniti dolor nemo perferendis vel repudiandae, ut explicabo, quidem debitis labore totam, accusantium exercitationem voluptates neque pariatur dolorum consequatur culpa unde.</p>
                         </div>
                         <div class="containerSliderItem dir">
-                            <img src='assets/img/vigilancia.png' style="width: 250px; height: 250px;" class="imgServiço"  alt="">
+                            <img src='assets/img/vigilancia.png'  class="imgServiço"  alt="">
                         </div>
                     </div>
                     
@@ -159,7 +160,7 @@ background: linear-gradient(45deg, #e4e5e627, #00416ace); /* W3C, IE 10+/ Edge, 
                             <p class="descServiço">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure deleniti dolor nemo perferendis vel repudiandae, ut explicabo, quidem debitis labore totam, accusantium exercitationem voluptates neque pariatur dolorum consequatur culpa unde.</p>
                         </div>
                         <div class="containerSliderItem dir">
-                            <img src='assets/img/guard.png' style="width: 250px; height: 250px;" class="imgServiço"  alt="">
+                            <img src='assets/img/guard.png'  class="imgServiço"  alt="">
                         </div>
                     </div>
                     
@@ -194,12 +195,12 @@ background: linear-gradient(45deg, #e4e5e627, #00416ace); /* W3C, IE 10+/ Edge, 
                 <div class="MVVaContainer">
                     <h1 class="tittleMVVa">Valores</h1>
                     <ul class="listaMVVa">
-                        <li>1 - Lorem, ipsum  consectetur </li>
-                        <li>2 - dolor sit amet consectetur </li>
-                        <li>3 - Lorem, ipsum dolor sit </li>
-                        <li>4 - dolor sit amet consectetur </li>
-                        <li>5 - Lorem, ipsum dolor sit  Lorem ipsum dolor </li>
-                        <li>6 - Lorem, ipsum dolor sit amet consectetur </li>
+                        <li><strong>1</strong> - Lorem, ipsum  consectetur </li>
+                        <li><strong>2</strong> - dolor sit amet consectetur </li>
+                        <li><strong>3</strong> - Lorem, ipsum dolor sit </li>
+                        <li><strong>4</strong> - dolor sit amet consectetur </li>
+                        <li><strong>5</strong> - Lorem, ipsum dolor sit  Lorem ipsum dolor </li>
+                        <li><strong>6</strong> - Lorem, ipsum dolor sit amet consectetur </li>
                     </ul>
                 </div>
             </div>
@@ -221,8 +222,8 @@ background: linear-gradient(45deg, #e4e5e627, #00416ace); /* W3C, IE 10+/ Edge, 
                     </ul>
                 </div>
                 <div class="RS_EContainer" id="Endereço">
-                    <h1 class="tituloRedesSociais">LOCALIZAÇÃO</h1>
-                    <h1 class="tituloRedesSociais">Av. Delegado Leopoldo Belczak, Capão da Imbuia 2000, Curitiba-PR</h1>
+                    <h1 class="tituloRedesSociais" id="local">LOCALIZAÇÃO</h1>
+                    <h1 class="tituloRedesSociais" id="localRua">Av. Delegado Leopoldo Belczak, Capão da Imbuia 2000, Curitiba-PR</h1>
                 </div>
                 
             </div>
@@ -253,15 +254,13 @@ background: linear-gradient(45deg, #e4e5e627, #00416ace); /* W3C, IE 10+/ Edge, 
                 <textarea name="Mensagem" id="" cols="30" rows="10" value=''>
                 
                 </textarea>
-                <input style="margin: 30px 0px 0px 0px;" type="submit">
+                <input style="margin: 30px 0px 0px 0px;" type="submit" value="Enviar">
             </form>
         </div>
         
         
     </div>
-    <footer>
-        <img id="logoFooter" src="assets/img/vigilancia.png" alt="">
-    </footer>
+    
     
     
     <script>
