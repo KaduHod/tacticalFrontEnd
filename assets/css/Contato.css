@@ -122,7 +122,10 @@ input[type='submit']:hover{
         width: 200px;
     }
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 600px) {
+    #Contato{
+        overflow: hidden;
+    }
     #Contato form{
         margin: 50px 0px 50px 0px;
         display: flex;
@@ -130,22 +133,13 @@ input[type='submit']:hover{
         align-items: center;
         margin-top: 20px;
         width: fit-content;
-        background-color: rgba(255, 255, 255, 0.849);
-        backdrop-filter: blur(3px);
-        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.295);
+        /* backdrop-filter: blur(3px); */
+        backdrop-filter: blur(2px);
         padding: 80px;
         padding-top:15px;
         padding-bottom: 15px; 
         z-index: 1;
         box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.925);
-    }
-    label h1{
-        font-size: 16px;
-        background-color: rgba(255, 255, 255, 0);
-        color: rgb(0, 0, 0);
-        width: 100%;
-        transform: translate(0px, 27px);
-        padding: 3px;
-        transition: 200ms;
     }
 }
