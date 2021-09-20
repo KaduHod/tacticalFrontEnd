@@ -78,7 +78,7 @@
     #ContainerSlaider1{
         background-image: url("../img/sliderImages/1.jpg");
         background-position-y: center;
-        background-position-x:-370px ;
+        background-position-x:170px ;
         background-size: cover;
     }
     #ContainerSlaider2{
@@ -159,7 +159,7 @@
     #ContainerSlaider1{
         background-image: url("../img/sliderImages/1.jpg");
         background-position-y: center;
-        background-position-x:0px ;
+        background-position-x:-200px ;
         background-size: cover;
     }
     #ContainerSlaider2{
