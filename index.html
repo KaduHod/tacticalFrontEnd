@@ -69,9 +69,10 @@ background: -webkit-linear-gradient(to right, #E4E5E6, #00416A);   Chrome 10-25,
 background: linear-gradient(45deg, #e4e5e627, #00416ace); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
             
             left: 0;
-            background: #232526;  
-            background: -webkit-linear-gradient(to right, #414345, #232526);  
-            background: linear-gradient(to top, #41434598, #232526);  
+            background: #2980B9;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to top, #ffffffb4, rgba(109, 212, 250, 0.479), #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            
         }
         
        
