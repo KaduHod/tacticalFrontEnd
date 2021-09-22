@@ -184,19 +184,27 @@ header{
         width: 80%;
         
         display: flex;
-        justify-content: center;
+        
     }
     .itemMenu{
         border-bottom: 1px solid rgb(167, 167, 167);
         padding: 15px 0px 15px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     #menuContentFlex a{
         color: rgb(255, 255, 255);
         text-decoration: none;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         
     }
     #fechar{
         border-bottom: 1px solid rgba(0, 0, 0, 0);
+    }
+    .imgIconeProximo{
+        width: 15px;
+        height: 15px;
     }
     
     
