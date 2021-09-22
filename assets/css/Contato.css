@@ -155,7 +155,8 @@ input[type='submit']:hover{
         justify-content: center;
         cursor: pointer;
         color: rgb(0, 0, 0);
-        width: 60%;
+        width: 70%;
+        padding: 0px 15px 0px 15px;
     }
     #TituloContato{
         font-size: 50px;
