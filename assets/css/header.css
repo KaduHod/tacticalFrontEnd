@@ -180,9 +180,19 @@ header{
         align-items: center;
         list-style: none;
     }
+    #menuContentFlex li{
+        width: 80%;
+        border-bottom: 1px solid white;
+        display: flex;
+        justify-content: center;
+    }
     #menuContentFlex a{
         color: rgb(255, 255, 255);
         text-decoration: none;
+        
+    }
+    #fechar{
+        border-bottom: 1px solid rgb(0, 0, 0);
     }
     
     
