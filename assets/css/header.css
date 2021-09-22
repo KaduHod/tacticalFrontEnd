@@ -13,6 +13,16 @@ header{
         box-shadow: 0px 0px 20px black;
     }
 }
+#menuContentBlock{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 31;
+    background-color: white;
+    left: -151%;
+    transition: 200ms;
+}
 #Logo{
     flex: 1;
     display: flex;
@@ -47,7 +57,8 @@ header{
     color: rgb(0, 0, 0);
     list-style: none;
     font-size: 17px;
-    
+    color: rgb(0, 0, 0);
+    text-decoration: none;
     
     
 }
@@ -57,9 +68,14 @@ header{
     box-sizing: border-box;
     border-bottom: 2px solid rgb(255, 255, 255);
     transition: 100ms;
+    
 }
-#headerItemsList li:hover{
+#headerItemsList a:hover{
     border-bottom: 2px solid rgb(165, 165, 165);
+}
+#headerItemsList a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 
 #headerContato{
@@ -101,7 +117,64 @@ header{
     width: 30px;
     height: 30px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
+    #MenuMobile{
+        display: block;
+        position: fixed;
+        left: -101%;
+        top: 15px;
+        width: 40px;
+        height: 50px;
+        animation: show-menu 600ms cubic-bezier(0.175, 0.885, 0.32, 1.075) 300ms forwards;
+        z-index: 30;
+    }
+    #MenuMobileFlex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        width: 100%;
+        
+        z-index: 31;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .traçoMenu{
+        width: 100%;
+        height: 6px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 2px;
+    }
+    @keyframes show-menu {
+        to{
+            left: 20px;
+        }
+    }
+    #menuContentBlock{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 31;
+        background-color: white;
+        left: -101%;
+        transition: 200ms;
+    }
+    #menuContentFlex{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+    }
+    #menuContentFlex a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    
+    
     *{
         margin: 0;
         padding: 0;
