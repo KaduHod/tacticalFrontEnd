@@ -84,9 +84,9 @@ background: linear-gradient(45deg, #e4e5e627, #00416ace); /* W3C, IE 10+/ Edge, 
         
     </style>
 </head>
-<body>
+<body >
     
-    <header>
+    <header >
         <div id="Logo">
             <img src="assets/img/tacticalLogoTransparent.png" alt="">
             
@@ -135,7 +135,7 @@ background: linear-gradient(45deg, #e4e5e627, #00416ace); /* W3C, IE 10+/ Edge, 
                 <h1 style="height: 100%;">
                     <div class="containerSlider" id="ContainerSlaider1">
                         <div class="containerSliderItem card esq" id="esqmaior">
-                            <h1 class="tituloContainerSlider">Serviço 1</h1>
+                            <h1 class="tituloContainerSlider" onclick="mostraLargura()">Serviço 1</h1>
                             <p class="descServiço">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure deleniti dolor nemo perferendis vel repudiandae, ut explicabo, quidem debitis labore totam, accusantium exercitationem voluptates neque pariatur dolorum consequatur culpa unde.</p>
                         </div>
                         <div class="containerSliderItem dirmenor" id="dirmenor">
@@ -271,6 +271,12 @@ background: linear-gradient(45deg, #e4e5e627, #00416ace); /* W3C, IE 10+/ Edge, 
     
     
     <script>
+        function mostraLargura(){
+            let largura = window.screen.width
+            let altura = window.screen.height
+            alert(`Largura: ${largura} \n Altura: ${altura} \n TE AMO PRA CARALHO <3`)
+            
+        }
         function estiloInput(id, idInput){
             let elemento = document.getElementById(id)
             
