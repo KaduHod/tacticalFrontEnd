@@ -170,11 +170,11 @@ header{
     }
     #menuContentFlex{
         display: flex;
-        width: 70%;
-        height: 80%;
+        width: 90%;
+        height: 90%;
         
         
-        background-color: rgba(0, 0, 0, 0.774);
+        background-color: rgba(0, 0, 0, 0.87);
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
@@ -187,7 +187,7 @@ header{
         
     }
     .itemMenu{
-        border-bottom: 1px solid rgb(167, 167, 167);
+        border-bottom: 1px solid rgb(97, 97, 97);
         padding: 15px 0px 15px 0px;
         display: flex;
         justify-content: space-between;
@@ -205,6 +205,10 @@ header{
     .imgIconeProximo{
         width: 15px;
         height: 15px;
+    }
+    .imgIcone{
+        width: 25px;
+        height: 25px;
     }
     
     
